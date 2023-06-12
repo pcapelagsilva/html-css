@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt
+">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes, ou simplesmente aumente ou diminua o tamanho de seu navegador:</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+    <p>Sempre trabalhar o media="(max-width:)" com a variável em MAXIMO (max)</p>
+    <p>Caso nós invertessemos a ordem de source de cima ele não leria a primeira. Por sempre devemos tomar MUITO CUIDADO!!!</p>
+    <hr>
+    <h1>Reproduzindo Áudios</h1>
+    <p>Vejamos como adicioanr áudio ao site com HTML5;</p>
+    <audio src="midia/som-sitemp3.mp3" controls autoplay></audio>
+    <!-- O aúdio pode ser em três formatos MP3, WAV e OGG-->
+    <p>Outra maneira de adicionar áudios é a seguinte:</p>
+    <audio preload="metadata" autoplay controls>
+        <source src="midia/som-sitemp3.mp3" type="audio/mpeg">
+        <source src="midia/som-sitemp3.ogg" type="audio/ogg">
+        <source src="midia/som-sitemp3.wav" type="audio/wav"> <!--SEMPRE EVITAR ARQUIVOS WAV-->
+        <p>Infelizmente seu navegadir não consegue reproduzir áudio <a href="midia/som-sitemp3.mp3">clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+    <hr>
+    <h1>Usando vídeos com Hospedagem Interna: </h1>
+    <p>Vamos ver como utilizar vídeos hospedados localmente, estando hospedado no meu própio servidor;</p>
+    <video src="videos/Vídeo-site-pedro.mp4" width="950" controls poster="imagens/painel-site.jpg"></video>
+    <p>Também podemos abrir o vídeo com source da mesma forma que fizmeos com as imagens.</p>
+    <p>Para adicionarmos thubms usamos a tag poster e por onde a imagem se encontra.</p>
+    <hr>
+    <h1>Usando vídeos com Hospedagem Externa: </h1>
+    <p>Para usarmos vídeos externos, como aqueles vindos do you tube, fazemos da seguinte forma: </p>
+    <p>High-Lights Gabriel Medina no Youtube: </p>
+    <iframe width="950" height="500" src="https://www.youtube.com/embed/_a8MFyKSc1s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <hr>
+</body>
+</html>

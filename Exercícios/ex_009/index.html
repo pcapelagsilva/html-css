@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+   <h1>Listas Ordenadas, Não Ordenadas, Mistas e de Definição:</h1> 
+   <hr>
+   <h2>Listas Ordenadas: </h2>
+   <p>Para ordrnarmos as listas de forma mais fácil, e de forma que consigamos editalas sem problemas usamos a tag OL:</p>
+   <ol type="1">
+    <li>Acordar</li>
+    <li>Arrumar a cama</li>
+    <li>Tomar café</li>
+    <li>Escovar os dentes</li>
+    <li>Se trocar</li>
+   </ol>
+   <p>cada intem da lista é caracterizado pela tag LI, sendo o \LI opcinional nas linhas, tendo que ser usao apenas no final</p>
+   <p>Também mudar o tipo de lista, se queremos ela com números, letras, algarismo romano, etc. Para isso basta usar OL TYPE=""</p>
+   <ol type="1"> <!-- Numérica-->
+    <li>Acordar</li>
+    <li>Arrumar a cama</li>
+    <li>Tomar café</li>
+    <li>Escovar os dentes</li>
+    <li>Se trocar</li>
+   </ol>
+
+   <ol type="A"> <!-- Alfabética Maiúscula-->
+    <li>Acordar</li>
+    <li>Arrumar a cama</li>
+    <li>Tomar café</li>
+    <li>Escovar os dentes</li>
+    <li>Se trocar</li>
+   </ol>
+   
+   <ol type="a"> <!-- Alfabética Minuscula-->
+    <li>Acordar</li>
+    <li>Arrumar a cama</li>
+    <li>Tomar café</li>
+    <li>Escovar os dentes</li>
+    <li>Se trocar</li>
+   </ol>
+   
+   <ol type="I"> <!-- Algarismo Romano Maiúsculo-->
+    <li>Acordar</li>
+    <li>Arrumar a cama</li>
+    <li>Tomar café</li>
+    <li>Escovar os dentes</li>
+    <li>Se trocar</li>
+   </ol>
+   
+   <ol type="i"> <!-- Algarismo Romano Minúsculo-->
+    <li>Acordar</li>
+    <li>Arrumar a cama</li>
+    <li>Tomar café</li>
+    <li>Escovar os dentes</li>
+    <li>Se trocar</li>
+   </ol>
+   <hr>
+   <h2>Listas Não Ordenadas: </h2>
+   <p>São aquelas na qaul a sequência não precisa ter sentido, normalmente usando símbolos para representação.</p>
+   <p>Para criarmos uma lista desse tipo usamos a tag UL</p>
+   <ul>
+    <li>Carro</li>
+    <li>Tênis</li>
+    <li>Tattoo</li>
+    <li>Viajem</li>
+   </ul>
+   <p>Este tipo de listas também possuem diversos tipos de estilo, sendo usados da mesma forma da anterioro UL TYPE="", vejamos a seguir:</p>
+   <ul type="disc"> <!-- Circulo preto-->
+    <li>Carro</li>
+    <li>Tênis</li>
+    <li>Tattoo</li>
+    <li>Viajem</li>
+   </ul>
+
+   <ul type="circle"> <!-- Circulo branco-->
+    <li>Carro</li>
+    <li>Tênis</li>
+    <li>Tattoo</li>
+    <li>Viajem</li>
+   </ul>
+
+   <ul type="square"> <!-- Quadrado -->
+    <li>Carro</li>
+    <li>Tênis</li>
+    <li>Tattoo</li>
+    <li>Viajem</li>
+   </ul>
+   <hr>
+   <h2>Listas Mistas: </h2>
+   <p>Essa é a junção das duas listas anteriores, para isso apenas botamos uma dentro das outras (aninhamento):</p>
+   <ul>
+        <li>Confirmados para festa junina:</li>
+        <ol type="1">
+            <li>Capela</li>
+            <ul type="circle">
+                <li>Cachorro-Quente</li>
+                <li>Vinho</li>
+            </ul>
+            <li>Bella</li>
+            <ul type="circle">
+                <li>Brigadeiro de churros</li>
+                <li>Pipoca</li>
+            </ul>
+            <li>Gabi</li>
+            <ul type="circle">
+                <li>Casa</li>
+                <li>Carne</li>
+            </ul>
+            <li>Fefa</li>
+            <ul type="circle">
+                <li>Milho</li>
+                <li>Suco</li>
+            </ul>
+            <li>Perau</li>
+            <ul type="circle">
+                <li>Paçoca</li>
+                <li>Refrigerante</li>
+            </ul>
+            <li>Lara</li>
+            <ul type="circle">
+                <li>Bolo de Milho</li>
+            </ul>
+        </ol>
+        <li>Duvidas para festa junina:</li>
+        <ol type="1" start="7">
+            <li>Isa</li>
+            <ul type="circle">
+                <li>Não sabe</li>
+            </ul>
+            <li>Diogo</li>
+            <ul type="circle">
+                <li>Não sabe</li>
+            </ul>
+            <li>Gus</li>
+            <ul type="circle">
+                <li>Não sabe</li>
+            </ul>
+            <li>Arthur</li>
+            <ul type="circle">
+                <li>Não sabe</li>
+            </ul>
+            <li>Murilo</li>
+            <ul type="circle">
+                <li>Não sabe</li>
+            </ul>
+        </ol>
+   </ul>
+   <p>Sempre tomar <mark>MUITO CUIDADO</mark> com a organização.</p>
+   <hr>
+   <h2>Listas de Definição: </h2>
+   <p>Funciona como um dicionário, dando a explicação do que é algo. Para ele usamos a tag DL com os itens sendo caracterizado poe DT e seu significado DD. Vejamos o exemplo:</p>
+   <dl>
+        <dt><ins><strong>Haule:</strong></ins></dt>
+        <dd>É aquele que não é do local, um estrangeiro, alguém de fora.</dd>
+        <dt><ins><strong>Prego:</strong></ins></dt>
+        <dd>Pessoa que não sabe fazer algo, se acha mas faz tudo errado.</dd>
+        <dt><ins><strong>Vala/Pico:</strong></ins></dt>
+        <dd>Pode ser definido como local do surf.</dd>
+        <dt><ins><strong>Nativo:</strong></ins></dt>
+        <dd>Pessoa na qual sempre surfa naquele local.</dd>
+        <dt><ins><strong>Quebrar:</strong></ins></dt>
+        <dd>Quando alguém esta surfando muito bem</dd>
+   </dl>
+   <hr>
+</body>
+</html>

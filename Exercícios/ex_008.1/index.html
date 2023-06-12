@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+</head>
+<body>
+    <h1>Outras formatações:</h1>
+    <hr>
+    <h2>Código-fonte:</h2>
+    <p>São partes de comandos, por exemplo, o comando <code>document.getElementyById('teste')</code> é escrito em linguagem JavaScript. Para isso envelopamos o código com  tag CODE </p>
+    <p>Agora um exemplo na Linguagem Python:
+        <pre>
+            <code>
+                num = int(input('Digite um número:'))
+                if num % 2 == 0:
+                    print(f'O número {num} é PAR)
+                else:
+                    print(f'O número {num} é IMPAR)
+                print('Fim do programa')
+            </code>
+        </pre>
+    </p>
+    <p>O CODE não salva seu código com formatação. Para formatarmos precisamos usar a tag PRE antes da tag CODE, como podemos ver a cima.</p>
+    <!-- Para tirarmos o espaço em excesso na lateral do código basta selecionalo e apertar as teclas SHIFT+TAB, caso queiramos criar espaços basta pressionar TAB-->
+    <hr>
+    <h2><q>Citações Simples:</q></h2>
+    <p>Para fazermos a citação de alguma frase basta usarmos a tag Q, vejamos a seguir:</p>
+    <p>Como já diria seu: <q>A vingança nunca é plena, mata a alma e a invenena</q></p>
+    <hr>
+    <h2>Citações compostas: </h2>
+    <p>Para usarmoscitações em bloco usamos a tag BLOCKQUOTE, vamos ver em prática:</p>
+    <p>Segundo Charles Darwin, no seu livro <q>A Origem das Espécies</q>: </p>
+    <blockquote cite="https://www.google.com.br/books/edition/Origem_das_esp%C3%A9cies/9wRrDwAAQBAJ?hl=pt-BR&gbpv=1">
+        De um começo tão singelo evoluíram as formas mais belas e maravilhosas
+    </blockquote>
+    <p>Alem disso conseguimos referênciar o livro do qual foi tirado o texto através da tag BLOCKQUOTE CITE=""</p>
+    <hr>
+    <H2>Abreviações (<abbr title="abreviação">abbr</abbr>):</H2>
+    <p>Para fazermos abreviações usamos a tag ABBR, indicando que é uma abreviação. Por exemplo:</p>
+    <p>Estou estudando <abbr title="Hyper Text Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>, e estou gostando muito.</p>
+    <hr>
+    <h2>Texo Invertido (<bdo dir="rtl">Texto Invertido:</bdo>): </h2>
+    <p>Também conseguimos criar TEXTOS INVERTIDOS usando a tag BDO + o sentido de escrita (rtl ou ltr), assim a tag fica BDO DIR="rtl ou  ltr"; vejamos um exemplo:</p>
+    <p>Meu nome é Pedro, se escrevermos ele invertido fica <bdo dir="rtl">Pedro</bdo></p>
+    <hr>
+</body>
+</html>
