@@ -4,20 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body{
-            height: 100vh;
+            /*height: 100vh;
             background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
+            background-attachment: fixed;
+            */
+
+            /*Shorthand - background
+            coloe > imagem > position > repeat > attachment;
+            background-size: ;
+            */
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+            background-size: cover;
         }
 
         main{
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -28,7 +37,9 @@
 <body>
     <main>
         <h1>Teste de Imagem de Fundo</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur amet saepe architecto recusandae! Perspiciatis dolorem ab corrupti, eum voluptates ipsum quasi explicabo quaerat a architecto repudiandae quidem veniam quo veritatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus assumenda eveniet animi modi aliquid et nihil illo officiis explicabo voluptatem, id veniam esse accusantium dicta tempore quas rerum, ipsa ab. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus mollitia earum, sapiente distinctio corrupti nesciunt aliquid tempora odio voluptas! Perspiciatis officiis pariatur magni at distinctio, dolore ex fugiat repellendus accusamus.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur amet saepe architecto recusandae! Perspiciatis dolorem ab corrupti, eum voluptates ipsum quasi explicabo quaerat a architecto repudiandae quidem veniam quo veritatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus assumenda eveniet animi modi aliquid et nihil illo officiis explicabo voluptatem, id veniam esse accusantium dicta tempore quas rerum, ipsa ab. 
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus mollitia earum, sapiente distinctio corrupti nesciunt aliquid tempora odio voluptas! Perspiciatis officiis pariatur magni at distinctio, dolore ex fugiat repellendus accusamus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, velit aspernatur repellat laboriosam totam laborum. Praesentium, incidunt sit saepe voluptates et debitis molestias expedita, recusandae perferendis aut quo ducimus quis! 
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim minus ut corrupti nihil harum. Deserunt quis ab, excepturi, saepe placeat voluptas culpa aperiam velit consectetur ratione unde, autem aliquid similique? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt sed, soluta eaque cupiditate asperiores quod animi nam error libero. Possimus tempore hic expedita eaque enim, explicabo repellendus adipisci quaerat neque.</p>
     </main>
 </body>
 </html>
