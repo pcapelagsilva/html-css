@@ -11,6 +11,17 @@ table{
     margin-bottom: 40px;
 }
 
+thead{
+    background-color: grey;
+    color: white;
+}
+
+th{
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
 td{
     border: 1px solid black;
     padding: 10px;
