@@ -4,17 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudos de Iframe</title>
+    <style>
+        Iframe{
+            width: 400px;
+            height: 400px;
+            border: 1px dashed blue;
+        }
+    </style>
 </head>
 <body>
     <h1>Testanto o uso de um Iframe</h1>
     <p>
         Acessando o site do 
         
-        <iframe src="https://www.cursoemvideo.com" frameborder="0"></iframe>
+        <iframe src="https://www.cursoemvideo.com" frameborder="0" height="500" scrolling="no">
+            <a href="https://www.cursoemvideo.com"> Curso em Vídeo           </a>
+        </iframe>
         
         para aprender a programar.  
     </p>
-    <p> O site do <iframe src="https:??www.google.com.br" frameborder="0">Google</iframe> também é muito legal!!</p>
-    <p>Existem sites que não permitem o uso de seu Iframe em sites, como vimos acima o google é um deles</p>
+    <p> 
+        O site do <iframe src="https:??www.google.com.br" frameborder="1"></iframe> google é muito legal!! pena que não funciona com Iframe kkkkkkkkk
+    </p>
+    <p>
+        Existem sites que não permitem o uso de seu Iframe em sites, como vimos acima o google é um deles
+    </p>
+    <p>
+        O repositório do Guanabara 
+        
+        <iframe src="https://gustavoguanabara.github.io" frameborder="0" height="500" width="500">
+            no <a href="https://gustavoguanabara.github.io">GitHub</a>
+        </iframe>
+        
+        também é bem legal!!
+    </p>
+<!--O tamanho padrão de um iframe é de 300x150 px-->
+
+<!-- Caso o tamanho seja posto dentro de uma css(style) ele sera soberano a qualquer outro comando-->
+    
+<!-- Caso o iframe seja muito grande e tenha barra de rolagem, podemos usar o parametro Scrolling para conseguir controlar:
+    scrolling="no" (tira a barra de rolagem)
+    scrolling="yes" (mantém a barra de rolagem)-->
 </body>
 </html>
