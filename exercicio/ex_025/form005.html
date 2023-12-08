@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de formulário: </h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+      <fieldset>
+        <legend>Sexo</legend>
+        <input type="radio" name="sexo" id="isexmas" value="M" checked>
+        <label for="isxmas">Masculino</label><br>
+        
+        <input type="radio" name="sexo" id="isexfem" value="F">
+        <label for="isxfel">Feminino</label>
+      </fieldset> 
+
+      <!--Quanto pomos o mesmo 'name="??"' no input de radio eles mudam automáticamente, mas APENAS PARA RADIO NÃO CHECKBOX-->
+      <!--TODA CHECKBOX QUE ESTEJA NO MESMO FIELDSET DEVE TER O MESMO 'NAME="??"'-->
+      <!--Quando pomos o CHECKED dentro do input ele já carrega o formulário com uma opção assinalada-->
+
+      <fieldset>
+        <legend>Esportes favoritos</legend>
+        <input type="checkbox" name="esfut" id="iesfut"> 
+        <label for="iesfut">Futebol</label> <br>
+        
+        <input type="checkbox" name="esbas" id="iesbat"> <label for="iesbat">Basquete</label> <br>
+        
+        <input type="checkbox" name="esmusc" id="iesmusc"> <label for="iesmusc">Musculação</label> <br>
+        
+        <input type="checkbox" name="essurf" id="iessurf"> <label for="iessurf">Surf</label> <br>
+        
+        <input type="checkbox" name="esalta" id="iesalta"> <label for="iesalta">Altinha</label> <br>
+        
+        <input type="checkbox" name="esftvl" id="iesftvl"> <label for="iesftvl">Futevolêi</label> <br>
+      </fieldset>
+        
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
