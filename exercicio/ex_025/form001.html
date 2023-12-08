@@ -12,14 +12,23 @@
 </head>
 <body>
     <h1>Meu primeiro formulário</h1>
-    <form action="cadastro.php" autocomplete="off">
+    <form action="cadastro.php" method="get" autocomplete="off">
+
+        <!--Existem dois métodos GET e POST, o mais comum é GET-->
+        <!--A diferença entre os dois é que po GET mostra na url do site as informações escritas no formulário e o POST não.-->
+        <!--Podemos usar o GET quando os dados não são sensíveis (Nome, Sobrenome, Peso, etc...)-->
+        <!--urls com GET podem ser compartilhadas, porém possuem um limite de 3000bt (3000 letras)-->
+        <!--Usamos o POST quando temos dados sensíveis (senhas, dados pessoais), dados com mais de 3000 e fotos e vídeos-->
+
         <p><label for="inome">Nome: </label> 
             <input type="text" name="nome" id="inome"></p>
-            <!-- A tag name serve para linkar a caixa de escrita com o tópico de escolha, sendo mais utilizada no php enquanto a tag id serve para o mesmo propósito porém é mais utilizada para javascript-->
         <p><label for="isobrenome">Sobrenome: </label>
-            <!--O uso da tag LABEL serve para relacionar o tópico a caixa de escrita desejada-->
             <input type="text" name="sobrenome" id="isobrenome"></p>
         <p><input type="submit" value="Enviar"></p>
+
+        <!-- A tag name serve para linkar a caixa de escrita com o tópico de escolha, sendo mais utilizada no php enquanto a tag id serve para o mesmo propósito porém é mais utilizada para javascript-->
+
+        <!--O uso da tag LABEL serve para relacionar o tópico a caixa de escrita desejada-->
     </form>
 </body>
 </html>
