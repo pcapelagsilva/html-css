@@ -1,1 +1,7 @@
 @charset "UTF-8";
+
+body{
+    background-image: url(../imagens/);
+    background-position: center bottom;
+    background-position: left bottom;
+}
